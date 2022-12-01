@@ -1,0 +1,531 @@
+/* Reinicio de Instrucciones para el diseño */
+:root
+{
+    --Titulos:'DM Serif Display', serif;
+    --Textos: 'DM Sans', sans-serif;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background-color: papayawhip;
+}
+
+h1,h2,h3,h4,h5,h6 
+{
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* Inicio instrucciones para el diseño del header */
+
+header
+{
+    width: 100%;
+    min-height: 8rem;
+    background-color: #2F3148;
+    color: white;
+}
+
+nav
+{
+    min-height: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.3rem 0.5rem;
+}
+
+.nav-seccion-izquierda
+{
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+
+    font-weight: 600;
+    font-size: 2.3rem;
+    font-family: var(--Titulos);
+    color: white;
+}
+
+.nav-seccion-izquierda h2:hover
+{
+    transform: scale(1.1);
+}
+.nav-seccion-izquierda a:hover
+{
+    color: papayawhip;
+}
+
+.nav-seccion-central
+{
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 22rem;
+}
+
+.nav-seccion-derecha
+{
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    width: 55rem;
+
+    font-size: 2.3rem;
+    font-family: var(--Titulos);
+    font-weight: 600;
+    
+}
+
+.nav-seccion-derecha a 
+{
+    margin: 0rem 2rem;
+    color: white;
+}
+
+.nav-seccion-derecha li:hover
+{
+    transform: scale(1.1);
+}
+
+.nav-seccion-derecha a:hover
+{
+    color: papayawhip;
+}
+
+.Logos-Cabecera
+{
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.Logos-Cabecera:hover
+{
+    transform: scale(1.1);
+    color: papayawhip;
+}
+
+.Logo-Github:hover
+{
+    transform: scale(1.1);
+    color: black;
+}
+
+.Logo-Linkedin:hover
+{
+    transform: scale(1.1);
+    color: #0474b4;
+}
+
+/* Inicio de las Secciones del main*/
+
+/* Inicio */
+.Seccion
+{
+    width: 100%;
+    min-height: 52rem;
+    background-color:#587099;
+    border-top: 0.3rem solid #101116;
+    border-bottom: 0.3rem solid #101116;
+}
+
+.Seccion-Inicio
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    color: white;
+    text-align: center;
+}
+
+.Seccion-Inicio .Informacion h2
+{
+    font-family: var(--Titulos);
+    font-size: 7.5rem;
+    font-weight: 700;
+}
+
+.Seccion-Inicio .Informacion h4
+{
+    font-family: var(--Titulos);
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.Seccion-Inicio .Bloque-Iconos
+{
+    height: 38rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Seccion-Inicio .Logos-Inicio
+{
+    height: 10rem;
+    width: 10rem;
+}
+
+/* Proyectos */
+
+.Seccion-Proyectos
+{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Seccion-Proyectos h2 
+{
+    font-family: var(--Titulos);
+    font-size: 7rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.Seccion-Proyectos h4 
+{
+    font-family: var(--Titulos);
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+
+    margin-bottom: 1.5rem;
+    max-width: 100rem;
+}
+
+.Seccion .grid
+{
+    width: 90%;
+    max-width: 120rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seccion article
+{
+    width: 100%;
+    min-height: 20vh;
+
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+figure
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.Nube, .Movil
+{
+    height: 10rem;
+    width: 10rem;
+}
+
+.Movil:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+    color:  #9cc422;
+}
+
+.Nube:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #0f4eb4;
+}
+
+/* Experiencias */
+
+.Seccion-Experiencias
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    color: white;
+    text-align: center;
+}
+
+.Seccion-Experiencias .Ultima-Experiencia
+{
+    height: 52rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Seccion-Experiencias .Ultima-Experiencia .Iconos-Experiencia
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.Seccion-Experiencias .Educacion
+{
+    height: 52rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Botones
+{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 39.2rem;
+}
+
+.Boton
+{ 
+    min-width: 40rem;
+    min-height: 6rem;
+    border-radius: 4rem;
+    background-color: #2F3148;
+    color: white;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+
+    font-family: var(--Textos);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.Boton-Titulo:hover
+{
+    background-color: #003366;
+    cursor: pointer;
+}
+
+.Boton-Platzi:hover
+{
+    background-color: #98ca3f;
+    cursor: pointer;
+}
+
+.Boton-Mintic:hover
+{
+    background-color: #0066cd;
+    cursor: pointer;
+}
+
+.Boton-CV:hover
+{
+    background-color:  #a41205;
+    cursor: pointer;
+}
+
+.Iconos-Botones
+{
+    height: 5rem;
+    width: 5rem;
+}
+
+.Uni
+{
+    margin-left: 3rem;
+}
+
+.Plat
+{
+    margin-left: 2rem;
+}
+
+.Min
+{
+    margin-left: 1.3rem;
+}
+
+.CV
+{
+    margin-left: 6.4rem;
+}
+
+
+.Seccion-Experiencias h4 
+{
+    font-family: var(--Titulos);
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.Seccion-Experiencias p
+{
+    max-width: 58rem;
+
+    font-family: var(--Textos);
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.Excel, .OneDrive
+{
+    height: 10rem;
+    width: 10rem;
+}
+
+/* Sobre mí */
+
+.Seccion-Sobre-mi
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Seccion-Sobre-mi .Objetivo-Profesional
+{
+    height: 52rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Seccion-Sobre-mi .Objetivo-Profesional h2
+{
+    font-family: var(--Titulos);
+    font-size: 8rem;
+    color: white;
+    text-align: center;
+}
+
+.Seccion-Sobre-mi .Objetivo-Profesional p
+{
+    max-width: 58rem;
+
+    font-family: var(--Textos);
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+ 
+
+.Seccion-Sobre-mi .Foto-Perfil-RedesSociales
+{
+    height: 45rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Seccion-Sobre-mi .Foto-Pedro-Leal
+{
+    height: 27rem;
+    width: 27rem;
+    border-radius: 50%;
+    border: white 0.2rem solid;
+}
+
+.Seccion-Sobre-mi .Social-Media
+{
+    width: 30rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.Seccion-Sobre-mi .Logos
+{
+    height: 10rem;
+    width: 10rem;
+}
+
+.Seccion-Sobre-mi .Logos-Sobre-mi-Github:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: black;
+}
+
+.Seccion-Sobre-mi .Logos-Sobre-mi-Linkedin:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #0474b4;
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2F3148;
+    padding: 1rem 0rem;
+
+    width: 100%;
+
+    font-family: var(--Titulos);
+    font-size: 4rem;
+    color: white;
+}
